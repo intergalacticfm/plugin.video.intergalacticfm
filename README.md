@@ -1,4 +1,4 @@
-# Intergalactic FM TV Kodi Video Plugin
+# Intergalactic FM TV video plugin for Kodi
 
 ![Intergalactic FM TV icon](icon.png?raw=true)
 
