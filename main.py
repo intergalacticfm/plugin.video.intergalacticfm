@@ -5,7 +5,7 @@
 # License: GPL v.3 https://www.gnu.org/copyleft/gpl.html
 
 import sys
-import os
+from os.path import isfile
 import requests
 
 from urllib import urlencode
@@ -15,6 +15,9 @@ from urlparse import parse_qsl
 import xbmcgui
 import xbmcplugin
 import xbmcaddon
+from xbmc import log, LOGNOTICE, LOGERROR
+
+__addonid__ = "plugin.video.intergalacticfm"
 
 # Get the plugin url in plugin:// notation.
 _url = sys.argv[0]
@@ -33,70 +36,92 @@ ip = 'images/'
 
 streams = {
     'mw': {
-#        stream: 'MAGIC WAVES',
+        'label': 'Magic Waves',
         'url': 'show/mw/',
         'image':  'magicwaves.png',
-        'channel': 'Magic Waves',
+        'tagline': '',
+        'plot': '',
+        'genre': 'electronic music',
     },
     'shipwrec': {
-#        stream: 'SHIPWREC',
+        'label': 'Shipwrec',
         'url': 'show/shipwrec/',
         'image': 'IFMTVBG2.jpg',
-        'channel': 'Shipwrec',
+        'tagline': '',
+        'plot': '',
+        'genre': 'electronic music',
     },
     'vunk': {
-#        stream: 'VUNK',
+        'label': 'Vunk',
         'url': 'live/vunk/',
         'image': 'IFMTVBG2.jpg',
-        'channel': 'Vunk',
+        'tagline': '',
+        'plot': 'Music straight from the heart is what David Vunk is all about. Known for his label Moustace Records and envigorating dj sets and productions, this weekly stream on Wednesday evening from West Coast\'s Rotterdam aims straight for your heart.',
+        'genre': 'electronic music',
     },
     'submit': {
-#        stream: 'SUBMIT',
+        'label': 'Submit',
         'url': 'show/submit/',
         'image': 'IFMTVBG2.jpg',
-        'channel': 'Submit',
+        'tagline': '',
+        'plot': 'Stream from the Berlin based producer named Gesloten Cirkel. Known to release on the label Murder Capital, you can experience his authentic non-compromising music and visuals created on instruments he monstly build himself.',
+        'genre': 'electronic music',
     },
     'discotto': {
-#        stream: 'DISCOTTO',
+        'label': 'Discotto',
         'url': 'show/discotto/',
         'image': 'IFMTVBG2.jpg',
-        'channel': 'Discotto',
+        'tagline': '',
+        'plot': 'Discotto is located in London, but his sets are for an international audience. A dj with guts using special edits to creatively build a set from his home studio for all to enjoy.',
+        'genre': 'electronic music',
     },
     'clone': {
-#        stream: 'CLONE',
+        'label': 'Clone',
         'url': 'show/clone/',
         'image': 'IFMTVBG2.jpg',
-        'channel': 'Clone'
+        'tagline': '',
+        'plot': 'In-store stream from Clone. This record shop, label and distributor focusses on electro, techno, house, soundtracks, (italo) disco and much more. Located in Rotterdam, the Netherlands, it is a lively part of the West Coast Sound of Holland as the owner is also an active dj and producer himself.',
+        'genre': 'electronic music',
     },
     'zahara': {
-#        stream: 'ZAHARA',
+        'label': 'Zahara',
         'url': 'show/zahara/',
         'image': 'image_zahara.png',
-        'channel': 'Zahara',
+        'tagline': '',
+        'plot': 'Live stream from Zahara cocktail bar which is located directly at the beach in Scheveningen, the Netherlands. A frequent location for Intergalactic FM djs and host for many of the IFM\'s infamous top 100. The most West you can go on Holland\'s West Coast.',
+        'genre': 'electronic music',
     },
     'neon': {
-#        stream: 'NEON',
+        'label': 'Neon',
         'url': 'show/neon/',
         'image': 'IFMTVBG2.jpg',
-        'channel': 'Neon',
+        'tagline': 'Dreams of Neon, Berlin',
+        'plot': 'Dreams of Neon transmits from Berlin offering streams from Neon studios and club nights by Lazercat, Naks and the Dreams of Neon residents.',
+        'genre': 'electro, acid, italo',
     },
     'onderwereld': {
-#        stream: 'ONDERWERELD',
+        'label': 'Onderwereld',
         'url': 'show/onderwereld/',
         'image': 'IFMTVBG2.jpg',
-        'channel': 'Onderwereld',
+        'tagline': '',
+        'plot': '',
+        'genre': 'electronic music',
     },
     'cbstv': {
-#        stream: 'CBS TV',
+        'label': 'CBS TV',
         'url': 'live/cbstv/',
         'image': 'cbstv.jpg',
-        'channel': 'CBS TV',
+        'tagline': 'Nothing Beyond Our Reach',
+        'plot': 'Cybernetic Broadcasting System dominates our galaxy for over a decade. This stream is non-commercial, non-conventional and nothing like it can be encountered on any planet. There is no escaping CBS TV.',
+        'genre': 'electro, acid, italo, disco',
     },
     'prc': {
-#        stream: 'INTERGALACTIC TV',
+        'label': 'Intergalactic TV',
         'url': 'live/smil:tv.smil/',
         'image': 'IFMTVBG2.jpg',
-        'channel': 'Intergalactic TV',
+        'tagline': 'No Station Such Dedication',
+        'plot': 'This stream is Intergalactic FM\'s TV channel. Delivering a mix of live recordings from the Panama Racing Club, the best B movies and keeping you updated on UFO sighings.',
+        'genre': 'electro, acid, italo, B movies',
     }    
 }
 
@@ -106,20 +131,23 @@ def now_videos(streams):
     """
     
     r = requests.get('{}{}'.format(fm, pn))
-    print(r.json())
+    #log('JSON: ' + r.json(), NOTICE)
 
     try:
         nowplay = r.json()
         npvids = nowplay['11']
-        print(npvids)
+        #log('npvids: ' + npvids, NOTICE)
     except requests.ValueError as e:
         npvids = []
-        print(e)
+        log('Value error: ' + e, LOGERROR)
 
     listvids = []
 
     for key in streams.keys():
         if key in set(npvids):
+            listvids.append(streams[key])
+        else:
+            #pass # Uncomment this line to hide offline streams
             listvids.append(streams[key])
     
     return listvids
@@ -138,17 +166,61 @@ def list_videos():
     videos = now_videos(streams)
 
     for video in videos:
-        list_item = xbmcgui.ListItem(label=video['channel'])
-        
+        list_item = xbmcgui.ListItem(label=video['label'])
+        list_item.setInfo(type='video', infoLabels={'genre': video['genre'], 'plot': video['plot'], 'tagline': video['tagline']})
+
+        # see https://kodi.wiki/view/Movie_artwork
+        # only poster, fanart and clearlogo is supported/needed
+        # at the moment, artwork shipped in plugin has priority, this might change later
+        art = {}
+        base = xbmc.translatePath('special://home/addons/{}/resources/'.format(__addonid__))
+        image = None
         if video['image']:
-            image = video['image']
-            image = '{}{}{}'.format(fm, ip, image)
-            print(image)
-            list_item.setArt({'thumb': image, 'icon': image, 'fanart': image})
-        
+            image = '{}{}{}'.format(fm, ip, video['image'])
+            log('image: ' + image, LOGNOTICE)
+            #TODO check if image is available!
+
+        # poster 1000x1500 1:1.5 PNG
+        poster = base + video['label'].lower().replace(' ', '_') + '-poster.png'
+        #log('poster: ' + poster, LOGNOTICE)
+        if isfile(poster):
+            art['poster'] = poster
+        elif image:
+            art['poster'] = image
+        else:
+            art['poster'] = base + 'poster.png'
+
+        # fanart 1920x1080 16:9 JPG
+        fanart = base + video['label'].lower().replace(' ', '_') + '-fanart.jpg'
+        #log('fanart: ' + fanart, LOGNOTICE)
+        if isfile(fanart):
+            art['fanart'] = fanart
+        elif image:
+            art['fanart'] = image
+        else:
+            art['fanart'] = base + 'fanart.png'
+
+        # clearlogo 800x310 1:0.388 transparent PNG (is top-left corner overlay)
+        clearlogo = base + video['label'].lower().replace(' ', '_') + '-clearlogo.png'
+        #log('clearlogo: ' + clearlogo, LOGNOTICE)
+        if isfile(clearlogo):
+            art['clearlogo'] = clearlogo
+        elif image:
+            art['clearlogo'] = image
+        else:
+            art['clearlogo'] = base + 'clearlogo.png'
+
+        # depricated!
+        # thumb 640x360 16:9 PNG
+        #thumb = base + video['label'].lower().replace(' ', '_') + '-thumb.png'
+        #log('thumb: ' + thumb, LOGNOTICE)
+        #art['thumb'] = thumb
+
+        list_item.setArt(art)
         list_item.setProperty('IsPlayable', 'true')
 
         url = '{}{}{}'.format(tv, video['url'], pl)
+        log('url: ' + url, LOGNOTICE)
         url = '{}?action=play&video={}'.format(_url, url)
         is_folder = False
 
