@@ -4,7 +4,8 @@
 # Created on: 07.10.2018
 # License: GPL v.3 https://www.gnu.org/copyleft/gpl.html
 
-import sys
+from json import load
+from sys import argv
 from os.path import isfile
 import requests
 
@@ -18,11 +19,12 @@ import xbmcaddon
 from xbmc import log, LOGNOTICE, LOGERROR
 
 __addonid__ = "plugin.video.intergalacticfm"
+base = xbmc.translatePath('special://home/addons/{}/resources/'.format(__addonid__))
 
 # Get the plugin url in plugin:// notation.
-_url = sys.argv[0]
+_url = argv[0]
 # Get the plugin handle as an integer number.
-_handle = int(sys.argv[1])
+_handle = int(argv[1])
 
 _addon = xbmcaddon.Addon()
 
@@ -34,96 +36,8 @@ pl = 'playlist.m3u8'
 ip = 'images/'
 
 
-streams = {
-    'mw': {
-        'label': 'Magic Waves',
-        'url': 'show/mw/',
-        'image':  'magicwaves.png',
-        'tagline': '',
-        'plot': '',
-        'genre': 'electronic music',
-    },
-    'shipwrec': {
-        'label': 'Shipwrec',
-        'url': 'show/shipwrec/',
-        'image': 'IFMTVBG2.jpg',
-        'tagline': '',
-        'plot': '',
-        'genre': 'electronic music',
-    },
-    'vunk': {
-        'label': 'Vunk',
-        'url': 'live/vunk/',
-        'image': 'IFMTVBG2.jpg',
-        'tagline': '',
-        'plot': 'Music straight from the heart is what David Vunk is all about. Known for his label Moustace Records and envigorating dj sets and productions, this weekly stream on Wednesday evening from West Coast\'s Rotterdam aims straight for your heart.',
-        'genre': 'electronic music',
-    },
-    'submit': {
-        'label': 'Submit',
-        'url': 'show/submit/',
-        'image': 'IFMTVBG2.jpg',
-        'tagline': '',
-        'plot': 'Stream from the Berlin based producer named Gesloten Cirkel. Known to release on the label Murder Capital, you can experience his authentic non-compromising music and visuals created on instruments he monstly build himself.',
-        'genre': 'electronic music',
-    },
-    'discotto': {
-        'label': 'Discotto',
-        'url': 'show/discotto/',
-        'image': 'IFMTVBG2.jpg',
-        'tagline': '',
-        'plot': 'Discotto is located in London, but his sets are for an international audience. A dj with guts using special edits to creatively build a set from his home studio for all to enjoy.',
-        'genre': 'electronic music',
-    },
-    'clone': {
-        'label': 'Clone',
-        'url': 'show/clone/',
-        'image': 'IFMTVBG2.jpg',
-        'tagline': '',
-        'plot': 'In-store stream from Clone. This record shop, label and distributor focusses on electro, techno, house, soundtracks, (italo) disco and much more. Located in Rotterdam, the Netherlands, it is a lively part of the West Coast Sound of Holland as the owner is also an active dj and producer himself.',
-        'genre': 'electronic music',
-    },
-    'zahara': {
-        'label': 'Zahara',
-        'url': 'show/zahara/',
-        'image': 'image_zahara.png',
-        'tagline': '',
-        'plot': 'Live stream from Zahara cocktail bar which is located directly at the beach in Scheveningen, the Netherlands. A frequent location for Intergalactic FM djs and host for many of the IFM\'s infamous top 100. The most West you can go on Holland\'s West Coast.',
-        'genre': 'electronic music',
-    },
-    'neon': {
-        'label': 'Neon',
-        'url': 'show/neon/',
-        'image': 'IFMTVBG2.jpg',
-        'tagline': 'Dreams of Neon, Berlin',
-        'plot': 'Dreams of Neon transmits from Berlin offering streams from Neon studios and club nights by Lazercat, Naks and the Dreams of Neon residents.',
-        'genre': 'electro, acid, italo',
-    },
-    'onderwereld': {
-        'label': 'Onderwereld',
-        'url': 'show/onderwereld/',
-        'image': 'IFMTVBG2.jpg',
-        'tagline': '',
-        'plot': '',
-        'genre': 'electronic music',
-    },
-    'cbstv': {
-        'label': 'CBS TV',
-        'url': 'live/cbstv/',
-        'image': 'cbstv.jpg',
-        'tagline': 'Nothing Beyond Our Reach',
-        'plot': 'Cybernetic Broadcasting System dominates our galaxy for over a decade. This stream is non-commercial, non-conventional and nothing like it can be encountered on any planet. There is no escaping CBS TV.',
-        'genre': 'electro, acid, italo, disco',
-    },
-    'prc': {
-        'label': 'Intergalactic TV',
-        'url': 'live/smil:tv.smil/',
-        'image': 'IFMTVBG2.jpg',
-        'tagline': 'No Station Such Dedication',
-        'plot': 'This stream is Intergalactic FM\'s TV channel. Delivering a mix of live recordings from the Panama Racing Club, the best B movies and keeping you updated on UFO sighings.',
-        'genre': 'electro, acid, italo, B movies',
-    }    
-}
+#TODO If JSON on GitHub is younger, load that file. Otherwise, load local file.
+streams = load(open(base + 'streams.json'))
 
 def now_videos(streams):
     """
@@ -160,7 +74,7 @@ def list_videos():
 
     listing = []
 
-    xbmcplugin.setPluginCategory(_handle, 'Intergalactic TV')
+    xbmcplugin.setPluginCategory(_handle, 'Live Streams')
     xbmcplugin.setContent(_handle, 'videos')
 
     videos = now_videos(streams)
@@ -173,9 +87,8 @@ def list_videos():
         # only poster, fanart and clearlogo is supported/needed
         # at the moment, artwork shipped in plugin has priority, this might change later
         art = {}
-        base = xbmc.translatePath('special://home/addons/{}/resources/'.format(__addonid__))
         image = None
-        if video['image']:
+        if 'image' in video and video['image']:
             image = '{}{}{}'.format(fm, ip, video['image'])
             log('image: ' + image, LOGNOTICE)
             #TODO check if image is available!
@@ -198,8 +111,8 @@ def list_videos():
         elif image:
             art['fanart'] = image
         else:
-            art['fanart'] = base + 'fanart.png'
-
+            art['fanart'] = base + 'fanart.jpg'
+        log('fanart: ' + art['fanart'], LOGNOTICE)
         # clearlogo 800x310 1:0.388 transparent PNG (is top-left corner overlay)
         clearlogo = base + video['label'].lower().replace(' ', '_') + '-clearlogo.png'
         #log('clearlogo: ' + clearlogo, LOGNOTICE)
