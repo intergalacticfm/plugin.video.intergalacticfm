@@ -33,6 +33,8 @@ for many add-ons.
 
 ![Screenshot 2](resources/s2.png?raw=true)
 
+![Screenshot 3](resources/s3.png?raw=true)
+
 
 ## Development
 
@@ -48,9 +50,6 @@ https://github.com/intergalacticfm/plugin.video.intergalacticfm/archive/master.z
 7. Choose **Install from zip file**
 8. Navigate to the directory where the zip file has been downloaded
 9. Install the file **master.zip**
-
-
-![Intergalactic FM TV fanart](resources/fanart.jpg?raw=true)
 
 
 ## See also
