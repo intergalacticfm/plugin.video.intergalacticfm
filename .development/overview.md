@@ -1,6 +1,6 @@
 # Intergalactic FM streams for Kodi plugin
 
-Below are the specific texts and images required by Kodi. Please, try to meet the requirements as close as possible. Kodi has many different views and we do not know which view for navigating and playing streams is used by the user. So using this format as described by Kodi itself gives the best result for all. This overview has been automatically generated on 2018-12-11 17:37:33.
+Below are the specific texts and images required by Kodi. Please, try to meet the requirements as close as possible. Kodi has many different views and we do not know which view for navigating and playing streams is used by the user. So using this format as described by Kodi itself gives the best result for all. This overview has been automatically generated on 2018-12-11 18:08:48.
 
 ## CBS TV (cbstv)
 
@@ -142,9 +142,9 @@ Below are the specific texts and images required by Kodi. Please, try to meet th
 
 **Tagline** (two to five words): *Gesloten Cirkel's stream*
 
-**Genre** (one to three genres): *electronic music*
+**Genre** (one to three genres): *electro, acid, techno*
 
-**Plot** (twenty to thirty words): *DRAFT: Stream from the Berlin based producer named Gesloten Cirkel. Known for releasing on Murder Capital. Experience his authentic non-compromising music and visuals.*
+**Plot** (twenty to thirty words): *DRAFT: Stream from the Berlin-based enigmatic producer named Gesloten Cirkel. Submit to his stream with his music and visuals.*
 
 **Poster** (1000 x 1500 PNG, main logo in center):
 ![Poster](../resources/submit-poster.png "Poster")
