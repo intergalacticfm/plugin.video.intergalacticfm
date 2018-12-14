@@ -1,6 +1,6 @@
 # Intergalactic FM streams for Kodi plugin
 
-Below are the specific texts and images required by Kodi. Please, try to meet the requirements as close as possible. Kodi has many different views and we do not know which view for navigating and playing streams is used by the user. So using this format as described by Kodi itself gives the best result for all. This overview has been automatically generated on 2018-12-11 18:08:48.
+Below are the specific texts and images required by Kodi. Please, try to meet the requirements as close as possible. Kodi has many different views and we do not know which view for navigating and playing streams is used by the user. So using this format as described by Kodi itself gives the best result for all. This overview has been automatically generated on 2018-12-14 11:34:36.
 
 ## CBS TV (cbstv)
 
@@ -8,7 +8,7 @@ Below are the specific texts and images required by Kodi. Please, try to meet th
 
 **Genre** (one to three genres): *electro, acid, italo, disco*
 
-**Plot** (twenty to thirty words): *DRAFT: Cybernetic Broadcasting System dominates our galaxy for over a decade. This stream is non-commercial, non-conventional and nothing like it can be encountered on any planet. There is no escaping CBS TV.*
+**Plot** (twenty to thirty words): *Cybernetic Broadcasting System dominates our galaxy for over a decade. This stream is non-commercial, non-conventional and nothing like it can be encountered on any planet. There is no escaping CBS TV.*
 
 **Poster** (1000 x 1500 PNG, main logo in center):
 ![Poster](../resources/cbstv-poster.png "Poster")
@@ -110,7 +110,7 @@ Below are the specific texts and images required by Kodi. Please, try to meet th
 
 **Genre** (one to three genres): *electro, acid, italo, B movies*
 
-**Plot** (twenty to thirty words): *DRAFT: This stream is Intergalactic FM's TV channel. Delivering a mix of live recordings from the Panama Racing Club, the best B movies and keeping you updated on UFO sighings.*
+**Plot** (twenty to thirty words): *This stream is Intergalactic FM's TV channel. Delivering a mix of live recordings from the Panama Racing Club, the best B movies and keeping you updated on UFO sighings.*
 
 **Poster** (1000 x 1500 PNG, main logo in center):
 ![Poster](../resources/prc-poster.png "Poster")
@@ -144,7 +144,7 @@ Below are the specific texts and images required by Kodi. Please, try to meet th
 
 **Genre** (one to three genres): *electro, acid, techno*
 
-**Plot** (twenty to thirty words): *DRAFT: Stream from the Berlin-based enigmatic producer named Gesloten Cirkel. Submit to his stream with his music and visuals.*
+**Plot** (twenty to thirty words): *Stream from the Berlin-based enigmatic producer named Gesloten Cirkel. Submit to his stream with his music and visuals.*
 
 **Poster** (1000 x 1500 PNG, main logo in center):
 ![Poster](../resources/submit-poster.png "Poster")
@@ -161,7 +161,7 @@ Below are the specific texts and images required by Kodi. Please, try to meet th
 
 **Genre** (one to three genres): *techno, acid, italo, disco*
 
-**Plot** (twenty to thirty words): *DRAFT: Music straight from the heart is what David Vunk is all about. Known for his label Moustace Records and his envigorating dj sets and productions, watch his weekly stream on Wednesday evening from West Coast's Rotterdam.*
+**Plot** (twenty to thirty words): *Music straight from the heart is what David Vunk is all about. Known for his label Moustace Records and his envigorating dj sets and productions, watch his weekly stream on Wednesday evening from West Coast's Rotterdam.*
 
 **Poster** (1000 x 1500 PNG, main logo in center):
 ![Poster](../resources/vunk-poster.png "Poster")
