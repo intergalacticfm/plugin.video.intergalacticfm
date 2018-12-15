@@ -57,7 +57,7 @@ def now_videos(streams):
 
     listvids = []
 
-    for key in streams.keys():
+    for key in sorted(streams.keys()):
         if key in set(npvids):
             listvids.append(streams[key])
         else:
@@ -85,55 +85,38 @@ def list_videos():
 
         # see https://kodi.wiki/view/Movie_artwork
         # only poster, fanart and clearlogo is supported/needed
-        # at the moment, artwork shipped in plugin has priority, this might change later
+
         art = {}
-        image = None
-        if 'image' in video and video['image']:
-            image = '{}{}{}'.format(fm, ip, video['image'])
-            log('image: ' + image, LOGNOTICE)
-            #TODO check if image is available!
 
         # poster 1000x1500 1:1.5 PNG
         poster = base + video['label'].lower().replace(' ', '_') + '-poster.png'
-        #log('poster: ' + poster, LOGNOTICE)
         if isfile(poster):
             art['poster'] = poster
-        elif image:
-            art['poster'] = image
-        else:
-            art['poster'] = base + 'poster.png'
+        else: # note: specific fallback
+            art['poster'] = base + 'intergalactic_tv-poster.png'
+        #log('poster: ' + art['poster'], LOGNOTICE)
 
         # fanart 1920x1080 16:9 JPG
         fanart = base + video['label'].lower().replace(' ', '_') + '-fanart.jpg'
-        #log('fanart: ' + fanart, LOGNOTICE)
         if isfile(fanart):
             art['fanart'] = fanart
-        elif image:
-            art['fanart'] = image
-        else:
-            art['fanart'] = base + 'fanart.jpg'
-        log('fanart: ' + art['fanart'], LOGNOTICE)
+        else: # note: specific fallback
+            art['fanart'] = base + 'cbs_tv-fanart.jpg'
+        #log('fanart: ' + art['fanart'], LOGNOTICE)
+
         # clearlogo 800x310 1:0.388 transparent PNG (is top-left corner overlay)
         clearlogo = base + video['label'].lower().replace(' ', '_') + '-clearlogo.png'
-        #log('clearlogo: ' + clearlogo, LOGNOTICE)
         if isfile(clearlogo):
             art['clearlogo'] = clearlogo
-        elif image:
-            art['clearlogo'] = image
-        else:
-            art['clearlogo'] = base + 'clearlogo.png'
-
-        # depricated!
-        # thumb 640x360 16:9 PNG
-        #thumb = base + video['label'].lower().replace(' ', '_') + '-thumb.png'
-        #log('thumb: ' + thumb, LOGNOTICE)
-        #art['thumb'] = thumb
+        else: # note: specific fallback
+            art['clearlogo'] = base + 'intergalactic_tv-clearlogo.png'
+        #log('clearlogo: ' + art['clearlogo'], LOGNOTICE)
 
         list_item.setArt(art)
         list_item.setProperty('IsPlayable', 'true')
 
         url = '{}{}{}'.format(tv, video['url'], pl)
-        log('url: ' + url, LOGNOTICE)
+        #log('url: ' + url, LOGNOTICE)
         url = '{}?action=play&video={}'.format(_url, url)
         is_folder = False
 

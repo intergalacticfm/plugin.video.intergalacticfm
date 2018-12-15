@@ -29,11 +29,11 @@ for many add-ons.
 
 ## Screenshots
 
-![Screenshot 1](resources/s1.png?raw=true)
+![Screenshot 1](screenshots/s1.png?raw=true)
 
-![Screenshot 2](resources/s2.png?raw=true)
+![Screenshot 2](screenshots/s2.png?raw=true)
 
-![Screenshot 3](resources/s3.png?raw=true)
+![Screenshot 3](screenshots/s3.png?raw=true)
 
 
 ## Development
