@@ -1,17 +1,31 @@
 {
+    "cbstv": {
+        "label": "CBS TV",
+        "url": "live/cbstv/",
+        "tagline": "Nothing Beyond Our Reach",
+        "plot": "Cybernetic Broadcasting System dominates our galaxy for over a decade. This stream is non-commercial, non-conventional and nothing like it can be encountered on any planet. You can run all you want, but there is no escaping CBS TV.",
+        "genre": "electro, acid, italo, disco"
+    },
+    "prc": {
+        "label": "Intergalactic TV",
+        "url": "live/smil:tv.smil/",
+        "tagline": "No Station Such Dedication",
+        "plot": "This stream is Intergalactic FM's TV channel. Delivering a mix of live recordings from the Panama Racing Club, the best B movies and keeping you updated on UFO sighings.This is eh apex of the West Coast Sound of Holland.",
+        "genre": "electro, acid, italo, B movies"
+    },
     "mw": {
         "label": "Magic Waves",
         "url": "show/mw/",
-        "tagline": "DRAFT: ",
-        "plot": "DRAFT: ",
-        "genre": "DRAFT: electronic music"
+        "tagline": " ",
+        "plot": " ",
+        "genre": "electronic music"
     },
-    "shipwrec": {
-        "label": "Shipwrec",
-        "url": "show/shipwrec/",
-        "tagline": "DRAFT: ",
-        "plot": "DRAFT: ",
-        "genre": "DRAFT: electronic music"
+    "neon": {
+        "label": "Neon",
+        "url": "show/neon/",
+        "tagline": "Dreams of Neon, Berlin",
+        "plot": "Dreams of Neon transmits from Berlin offering streams from Neon studios and club nights by Lazercat, Naks and the Dreams of Neon residents.",
+        "genre": "electro, acid, italo"
     },
     "vunk": {
         "label": "Vunk",
@@ -30,9 +44,16 @@
     "discotto": {
         "label": "Discotto",
         "url": "show/discotto/",
-        "tagline": "DRAFT: ",
-        "plot": "DRAFT: Discotto is located in London, but his sets are for an international audience. A dj with guts using special edits to creatively build a set from his home studio for all to enjoy.",
-        "genre": "DRAFT: electronic music"
+        "tagline": " ",
+        "plot": "Discotto is located in London, but his sets are for an international audience. A dj with guts using special edits to creatively build a set from his home studio for all to enjoy.",
+        "genre": "electronic music"
+    },
+    "shipwrec": {
+        "label": "Shipwrec",
+        "url": "show/shipwrec/",
+        "tagline": " ",
+        "plot": " ",
+        "genre": "electronic music"
     },
     "clone": {
         "label": "Clone",
@@ -48,32 +69,11 @@
         "plot": "Live stream from Zahara cocktail bar which is located directly at the beach in Scheveningen, the Netherlands. A frequent location for Intergalactic FM djs and has hosted for many of the IFM's infamous top 100. The most West you can go on Holland's Coast.",
         "genre": "electronic music"
     },
-    "neon": {
-        "label": "Neon",
-        "url": "show/neon/",
-        "tagline": "Dreams of Neon, Berlin",
-        "plot": "Dreams of Neon transmits from Berlin offering streams from Neon studios and club nights by Lazercat, Naks and the Dreams of Neon residents.",
-        "genre": "electro, acid, italo"
-    },
     "onderwereld": {
         "label": "Onderwereld",
         "url": "show/onderwereld/",
-        "tagline": "DRAFT: ",
-        "plot": "DRAFT: ",
-        "genre": "DRAFT: electronic music"
-    },
-    "cbstv": {
-        "label": "CBS TV",
-        "url": "live/cbstv/",
-        "tagline": "Nothing Beyond Our Reach",
-        "plot": "Cybernetic Broadcasting System dominates our galaxy for over a decade. This stream is non-commercial, non-conventional and nothing like it can be encountered on any planet. You can run all you want, but there is no escaping CBS TV.",
-        "genre": "electro, acid, italo, disco"
-    },
-    "prc": {
-        "label": "Intergalactic TV",
-        "url": "live/smil:tv.smil/",
-        "tagline": "No Station Such Dedication",
-        "plot": "This stream is Intergalactic FM's TV channel. Delivering a mix of live recordings from the Panama Racing Club, the best B movies and keeping you updated on UFO sighings.This is eh apex of the West Coast Sound of Holland.",
-        "genre": "electro, acid, italo, B movies"
-    }    
+        "tagline": " ",
+        "plot": " ",
+        "genre": "electronic music"
+    }
 }
