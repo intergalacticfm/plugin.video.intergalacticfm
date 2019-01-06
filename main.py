@@ -33,7 +33,6 @@ fm = 'https://www.intergalactic.fm/'
 tv = 'https://www.intergalactic.tv/'
 pn = 'ifm-system/playingnow.json'
 pl = 'playlist.m3u8'
-ip = 'images/'
 
 
 #TODO If JSON on GitHub is younger, load that file. Otherwise, load local file.
