@@ -1,5 +1,8 @@
+Version 2.0.1
+Number of new images and descriptions of channels
+
 Version 2.0.0
-Completely new implementation by dromor offering multiple streams
+Completely new implementation by dromer offering multiple streams
 
 Version 1.1.1
 Added more video streams, disabled youtube due to bug
