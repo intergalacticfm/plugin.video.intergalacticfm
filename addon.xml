@@ -30,9 +30,9 @@ Zie ook de audioplugin. Overweeg a.u.b. een donatie te doen op https://intergala
     <assets>
         <icon>resources/icon.png</icon>
         <fanart>resources/fanart.jpg</fanart>
-        <screenshot>screenshosts/s1.png</screenshot>
-        <screenshot>screenshosts/s2.png</screenshot>
-        <screenshot>screenshosts/s3.png</screenshot>    
+        <screenshot>screenshots/s1.png</screenshot>
+        <screenshot>screenshots/s2.png</screenshot>
+        <screenshot>screenshots/s3.png</screenshot>    
     </assets>
     <news>Updated with latest artwork metadata</news>
     <license>The GNU General Public License (GPL)</license>
