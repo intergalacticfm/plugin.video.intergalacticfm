@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.intergalacticfm" name="Intergalactic FM TV" version="2.0.1" provider-name="Dreamer and Pander">
+<addon id="plugin.video.intergalacticfm" name="Intergalactic FM TV" version="2.0.1" provider-name="Dreamer, Pander">
 <requires>
     <import addon="xbmc.python" version="2.25.0"/>
     <import addon="script.module.requests" version="2.19.1"/>
@@ -38,6 +38,6 @@ Zie ook de audioplugin. Overweeg a.u.b. een donatie te doen op https://intergala
     <license>The GNU General Public License (GPL)</license>
     <source>https://github.com/intergalacticfm/plugin.video.intergalacticfm</source>
     <website>http://intergalactic.fm</website>
-    <forum>http://forum.xbmc.org/showthread.php?tid=184904</forum>
+    <forum>https://forum.kodi.tv/showthread.php?tid=257201</forum>
 </extension>
 </addon>

@@ -35,7 +35,7 @@ pn = 'ifm-system/playingnow.json'
 pl = 'playlist.m3u8'
 
 
-#TODO If JSON on GitHub is younger, load that file. Otherwise, load local file.
+#TODO If JSON on ifm-site is younger, load that file. Otherwise, load local file.
 streams = load(open(base + 'streams.json'))
 
 def now_videos(streams):
