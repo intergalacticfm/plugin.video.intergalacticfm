@@ -56,7 +56,7 @@ https://github.com/intergalacticfm/plugin.audio.intergalacticfm
 
 ## Thanks
 
-For version 2, thanks go to [dromor](https://github.com/dromer) for developing
+For version 2, thanks go to [Dreamer](https://github.com/dromer) for developing
 it. For version 1, thanks go to the authors of the original add-on that was
 developed for Channel 31 and forked from
 https://github.com/DamonToumbourou/plugin.video.c31
