@@ -75,5 +75,12 @@
         "tagline": "electronic music",
         "plot": "Platform for all kinds of unique electronic music. Onderwereld is streaming from their bunker somewhere in the Hague.",
         "genre": "electronic music"
+    },
+    "muledriver": {
+        "label": "Mule Driver",
+        "url": "show/muledriver/",
+        "tagline": "Mule driving is not a crime",
+        "plot": "Live stream from Mule Driver's machine room",
+        "genre": "electro, acid, techno"
     }
 }
