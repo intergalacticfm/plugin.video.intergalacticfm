@@ -47,6 +47,11 @@ https://github.com/intergalacticfm/plugin.video.intergalacticfm/archive/master.z
 9. Install the file **master.zip**
 
 
+## Maintenance
+
+See `resources/disabled` for (temporarily) disabled streams.
+
+
 ## See also
 
 See also the audio plugin called Intergalactic FM at
