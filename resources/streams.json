@@ -82,5 +82,12 @@
         "tagline": "Mule driving is not a crime",
         "plot": "Live stream from Mule Driver's machine room",
         "genre": "electro, acid, techno"
+    },
+    "leftover": {
+        "label": "Leftover",
+        "url": "show/leftover/",
+        "tagline": "Straight from the bin",
+        "plot": "Loosely assaciated group of activists that does broadcasts from various squats and other locations.",
+        "genre": "electro, acid, tekno"
     }
 }
