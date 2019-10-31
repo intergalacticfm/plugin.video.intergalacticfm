@@ -1,3 +1,6 @@
+Version 2.1.1
+Mtv url fix and some images improved
+
 Version 2.1.0
 Some channels added and some removed
 
