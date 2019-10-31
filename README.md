@@ -21,8 +21,9 @@ Stepts to take to install from the Kodi main repository are:
 
 Instructions for installing Kodi can be found here: https://kodi.tv/download
 
-Please consider installing [Kodi https://f-droid.org/en/packages/org.xbmc.kodi/]
-and its remote control [Kore https://f-droid.org/en/packages/org.xbmc.kore/]
+#### Android
+Please consider installing [Kodi](https://f-droid.org/en/packages/org.xbmc.kodi/)
+and its remote control [Kore](https://f-droid.org/en/packages/org.xbmc.kore/)
 from the F-Droid app store for Android.
 
 
