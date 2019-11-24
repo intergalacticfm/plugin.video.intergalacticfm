@@ -16,7 +16,7 @@ from urlparse import parse_qsl
 import xbmcgui
 import xbmcplugin
 import xbmcaddon
-from xbmc import log, LOGNOTICE, LOGERROR
+from xbmc import log, LOGDEBUG, LOGERROR
 
 __addonid__ = "plugin.video.intergalacticfm"
 base = xbmc.translatePath('special://home/addons/{}/resources/'.format(__addonid__))
@@ -44,12 +44,12 @@ def now_videos(streams):
     """
     
     r = requests.get('{}{}'.format(fm, pn))
-    #log(__addonid__ + ' JSON: ' + r.json(), LOGNOTICE)
+    #log(__addonid__ + ' JSON: ' + r.json(), LOGDEBUG)
 
     try:
         nowplay = r.json()
         npvids = nowplay['11']
-        log(__addonid__ + ' npvids: {}'.format(npvids), LOGNOTICE)
+        log(__addonid__ + ' npvids: {}'.format(npvids), LOGDEBUG)
     except Exception as e:
         npvids = []
         log(__addonid__ + ' Error with nowplay[\'11\'] {}'.format(e), LOGERROR)
@@ -93,7 +93,7 @@ def list_videos():
             art['poster'] = poster
         else: # note: specific fallback
             art['poster'] = base + 'intergalactic_tv-poster.png'
-        #log(__addonid__ + ' poster: ' + art['poster'], LOGNOTICE)
+        #log(__addonid__ + ' poster: ' + art['poster'], LOGDEBUG)
 
         # fanart 1920x1080 16:9 JPG
         fanart = base + video['label'].lower().replace(' ', '_') + '-fanart.jpg'
@@ -101,7 +101,7 @@ def list_videos():
             art['fanart'] = fanart
         else: # note: specific fallback
             art['fanart'] = base + 'cbs_tv-fanart.jpg'
-        #log(__addonid__ + ' fanart: ' + art['fanart'], LOGNOTICE)
+        #log(__addonid__ + ' fanart: ' + art['fanart'], LOGDEBUG)
 
         # clearlogo 800x310 1:0.388 transparent PNG (is top-left corner overlay)
         clearlogo = base + video['label'].lower().replace(' ', '_') + '-clearlogo.png'
@@ -109,13 +109,13 @@ def list_videos():
             art['clearlogo'] = clearlogo
         else: # note: specific fallback
             art['clearlogo'] = base + 'intergalactic_tv-clearlogo.png'
-        #log(__addonid__ + ' clearlogo: ' + art['clearlogo'], LOGNOTICE)
+        #log(__addonid__ + ' clearlogo: ' + art['clearlogo'], LOGDEBUG)
 
         list_item.setArt(art)
         list_item.setProperty('IsPlayable', 'true')
 
         url = '{}{}{}'.format(tv, video['url'], pl)
-        #log(__addonid__ + ' url: ' + url, LOGNOTICE)
+        #log(__addonid__ + ' url: ' + url, LOGDEBUG)
         url = '{}?action=play&video={}'.format(_url, url)
         is_folder = False
 
