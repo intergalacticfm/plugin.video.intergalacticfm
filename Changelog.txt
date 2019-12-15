@@ -1,3 +1,6 @@
+Version 2.2.0
+Added YouTube channel
+
 Version 2.1.2
 Fixes for kodi release
 

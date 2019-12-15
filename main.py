@@ -121,6 +121,16 @@ def list_videos():
 
         listing.append((url, list_item, is_folder))
 
+    list_item = xbmcgui.ListItem('IFM YouTube')
+    list_item.setProperty('IsPlayable', 'false')
+    list_item.setInfo(type='video', infoLabels={'genre': 'electro, acid, italo, disco', 'plot': 'Live sets from Intergalactic FM on its YouTube channel. These are mainly recordings from the Panama Racing Club in The Hague.', 'tagline': 'You Are Not Alone'})
+    art = {}
+    art['poster'] = base + 'intergalactic_tv-poster.png'
+    art['fanart'] = base + 'cbs_tv-fanart.jpg'
+    art['clearlogo'] = base + 'intergalactic_tv-clearlogo.png'
+    list_item.setArt(art)
+    listing.append(('plugin://plugin.video.youtube/channel/UCyiBzmL0FAJlupsJJg5BNzQ/', list_item, True))
+
     xbmcplugin.addDirectoryItems(_handle, listing, len(listing))
     xbmcplugin.addSortMethod(_handle, xbmcplugin.SORT_METHOD_LABEL_IGNORE_THE)
     xbmcplugin.endOfDirectory(_handle)
