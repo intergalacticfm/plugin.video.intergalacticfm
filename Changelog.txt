@@ -1,5 +1,5 @@
 Version 2.2.0
-Added YouTube channel
+Added IFM and Viewlexx YouTube channels
 
 Version 2.1.2
 Fixes for kodi release
