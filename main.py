@@ -133,7 +133,7 @@ def list_videos():
 
     list_item = xbmcgui.ListItem('YouTube Viewlexx')
     list_item.setProperty('IsPlayable', 'false')
-    list_item.setInfo(type='video', infoLabels={'genre': 'electro, acid', 'plot': 'The official YouTube channel of the record label Viewlexx, est. 1995. Also home to the sublabel Murder Capital and I-f\'s playlist The Daily Struggle.', 'tagline': 'V = for Viewlexx!'})
+    list_item.setInfo(type='video', infoLabels={'genre': 'electro, acid', 'plot': 'The official YouTube channel of the record label Viewlexx, est. 1995. Also home to the sublabel Murder Capital and I-F\'s playlist The Daily Struggle.', 'tagline': 'V = for Viewlexx!'})
     art = {}
     art['poster'] = base + 'viewlexx_youtube-poster.png'
     art['fanart'] = base + 'cbs_tv-fanart.jpg'
