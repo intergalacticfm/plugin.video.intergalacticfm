@@ -139,7 +139,7 @@ def list_videos():
     art['fanart'] = base + 'cbs_tv-fanart.jpg'
     art['clearlogo'] = base + 'intergalactic_tv-clearlogo.png'
     list_item.setArt(art)
-    listing.append(('plugin://plugin.video.youtube/channel/UCNNH5GlnJvmNSUS53qNa8jg/', list_item, False))
+    listing.append(('plugin://plugin.video.youtube/channel/UCNNH5GlnJvmNSUS53qNa8jg/', list_item, True))
 
     xbmcplugin.addDirectoryItems(_handle, listing, len(listing))
     xbmcplugin.addSortMethod(_handle, xbmcplugin.SORT_METHOD_LABEL_IGNORE_THE)
