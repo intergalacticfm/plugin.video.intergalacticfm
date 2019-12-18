@@ -73,13 +73,14 @@ def list_videos():
 
     listing = []
 
-    xbmcplugin.setPluginCategory(_handle, 'Live Streams')
+    xbmcplugin.setPluginCategory(_handle, 'Channels')
     xbmcplugin.setContent(_handle, 'videos')
 
     videos = now_videos(streams)
 
     for video in videos:
-        list_item = xbmcgui.ListItem(label=video['label'])
+        label = 'Live - {}'.format(video['label'])
+        list_item = xbmcgui.ListItem(label=label)
         list_item.setInfo(type='video', infoLabels={'genre': video['genre'], 'plot': video['plot'], 'tagline': video['tagline']})
 
         # see https://kodi.wiki/view/Movie_artwork
