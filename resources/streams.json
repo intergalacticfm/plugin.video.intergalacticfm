@@ -41,6 +41,13 @@
         "plot": "Streaming live and direct from the Woolwich triangle, London. Aural and visual stimulation from the studio featuring Discotto and guests.",
         "genre": "italo, disco, electro"
     },
+    "elcamino": {
+        "label": "El Camino",
+        "url": "show/elcamino/",
+        "tagline": "Es el Camino",
+        "plot": "TODO.",
+        "genre": "techno, disco, chicago, electro"
+    },
     "shipwrec": {
         "label": "Shipwrec",
         "url": "show/shipwrec/",
