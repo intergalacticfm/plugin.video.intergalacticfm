@@ -96,5 +96,12 @@
         "tagline": "Cocktailbar Scheveningen",
         "plot": "Live stream from Zahara cocktail bar which is located directly at the beach in Scheveningen, the Netherlands. A frequent location for Intergalactic FM djs and has hosted for many of the IFM's infamous top 100. The most West you can go on Holland's Coast.",
         "genre": "electronic music"
+    },
+    "djaustincassell": {
+        "label": "Austin Cassell",
+        "url": "show/djaustincassell/",
+        "tagline": "Austin Cassell's stream",
+        "plot": "UK radio host and dj specialising in braindance, experimental, old school techno and multigenre dj sets. He has been part of the IFM krew since 2012 curating the very best of new music, classic tracks and exclusive guest sets. Previous guests include Wisp, Global Goon, NEZ, VLR and Impakt",
+        "genre": "braindance, experimental, old school techno"
     }
 }
