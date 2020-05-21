@@ -44,7 +44,7 @@ def now_videos(streams):
     """
     
     r = requests.get('{}{}'.format(fm, pn))
-    #log(__addonid__ + ' JSON: ' + r.json(), LOGDEBUG)
+    # log("{} JSON: {}".format(__addonid__, r.json()), LOGDEBUG)
 
     try:
         nowplay = r.json()

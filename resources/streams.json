@@ -6,6 +6,13 @@
         "plot": "Cybernetic Broadcasting System dominates 24/7 our galaxy for over a decade. This stream is non-commercial, non-conventional and nothing like it can be encountered on any planet. You can run all you want, but there is no escaping CBS TV.",
         "genre": "electro, acid, italo, disco"
     },
+    "tdmtv": {
+        "label": "The Dream Machine TV",
+        "url": "show/tdmtv/",
+        "tagline": "You Are Not Alone",
+        "plot": "This stream is Intergalactic FM's video channel called The Dream Machine for soundtracks, ambient and experimental music.",
+        "genre": "ambient, experimental, soundtracks"
+    },
     "mtv": {
         "label": "Murder Capital TV",
         "url": "live/mtv/",
