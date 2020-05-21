@@ -6,6 +6,13 @@
         "plot": "Cybernetic Broadcasting System dominates 24/7 our galaxy for over a decade. This stream is non-commercial, non-conventional and nothing like it can be encountered on any planet. You can run all you want, but there is no escaping CBS TV.",
         "genre": "electro, acid, italo, disco"
     },
+    "tdmtv": {
+        "label": "The Dream Machine TV",
+        "url": "live/tdmtv/",
+        "tagline": "Warm Up and Cool Down",
+        "plot": "Space and Experimental exploration station, warm up and cool down.",
+        "genre": "space, experimental, soundtracks"
+    },
     "mtv": {
         "label": "Murder Capital TV",
         "url": "live/mtv/",
