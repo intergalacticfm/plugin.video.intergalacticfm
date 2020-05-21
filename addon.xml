@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.intergalacticfm" name="Intergalactic FM TV" version="2.2.1" provider-name="Dreamer, Pander">
+<addon id="plugin.video.intergalacticfm" name="Intergalactic FM TV" version="2.3.0" provider-name="Dreamer, Pander">
 <requires>
     <import addon="xbmc.python" version="2.25.0"/>
     <import addon="script.module.requests" version="2.19.1"/>
@@ -21,7 +21,7 @@ See also the audio plugin. Please consider donating at https://intergalactic.fm 
         <fanart>resources/fanart.jpg</fanart>
         <screenshot>screenshots/s1.png</screenshot>
         <screenshot>screenshots/s2.png</screenshot>
-        <screenshot>screenshots/s3.png</screenshot>    
+        <screenshot>screenshots/s3.png</screenshot>
     </assets>
     <news>Updated with latest artwork metadata</news>
     <license>The GNU General Public License (GPL)</license>
