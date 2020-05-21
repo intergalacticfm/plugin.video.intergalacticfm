@@ -122,25 +122,25 @@ def list_videos():
 
         listing.append((url, list_item, is_folder))
 
-    list_item = xbmcgui.ListItem('YouTube IFM')
-    list_item.setProperty('IsPlayable', 'false')
-    list_item.setInfo(type='video', infoLabels={'genre': 'electro, acid, italo, disco', 'plot': 'The official YouTube channel of Intergalactic FM. Offers hundreds of videos, most are live sets recorded at the Panama Racing Club and IFM Fest in The Hague.', 'tagline': 'You Are Not Alone'})
-    art = {}
-    art['poster'] = base + 'intergalactic_youtube-poster.png'
-    art['fanart'] = base + 'cbs_tv-fanart.jpg'
-    art['clearlogo'] = base + 'intergalactic_tv-clearlogo.png'
-    list_item.setArt(art)
-    listing.append(('plugin://plugin.video.youtube/channel/UCyiBzmL0FAJlupsJJg5BNzQ/', list_item, True))
-
-    list_item = xbmcgui.ListItem('YouTube Viewlexx')
-    list_item.setProperty('IsPlayable', 'false')
-    list_item.setInfo(type='video', infoLabels={'genre': 'electro, acid', 'plot': 'The official YouTube channel of the record label Viewlexx, est. 1995. Also home to the sublabel Murder Capital and I-F\'s playlist The Daily Struggle.', 'tagline': 'V = for Viewlexx!'})
-    art = {}
-    art['poster'] = base + 'viewlexx_youtube-poster.png'
-    art['fanart'] = base + 'cbs_tv-fanart.jpg'
-    art['clearlogo'] = base + 'intergalactic_tv-clearlogo.png'
-    list_item.setArt(art)
-    listing.append(('plugin://plugin.video.youtube/channel/UCNNH5GlnJvmNSUS53qNa8jg/', list_item, True))
+#    list_item = xbmcgui.ListItem('YouTube IFM')
+#    list_item.setProperty('IsPlayable', 'false')
+#    list_item.setInfo(type='video', infoLabels={'genre': 'electro, acid, italo, disco', 'plot': 'The official YouTube channel of Intergalactic FM. Offers hundreds of videos, most are live sets recorded at the Panama Racing Club and IFM Fest in The Hague.', 'tagline': 'You Are Not Alone'})
+#    art = {}
+#    art['poster'] = base + 'intergalactic_youtube-poster.png'
+#    art['fanart'] = base + 'cbs_tv-fanart.jpg'
+#    art['clearlogo'] = base + 'intergalactic_tv-clearlogo.png'
+#    list_item.setArt(art)
+#    listing.append(('plugin://plugin.video.youtube/channel/UCyiBzmL0FAJlupsJJg5BNzQ/', list_item, True))
+#
+#    list_item = xbmcgui.ListItem('YouTube Viewlexx')
+#    list_item.setProperty('IsPlayable', 'false')
+#    list_item.setInfo(type='video', infoLabels={'genre': 'electro, acid', 'plot': 'The official YouTube channel of the record label Viewlexx, est. 1995. Also home to the sublabel Murder Capital and I-F\'s playlist The Daily Struggle.', 'tagline': 'V = for Viewlexx!'})
+#    art = {}
+#    art['poster'] = base + 'viewlexx_youtube-poster.png'
+#    art['fanart'] = base + 'cbs_tv-fanart.jpg'
+#    art['clearlogo'] = base + 'intergalactic_tv-clearlogo.png'
+#    list_item.setArt(art)
+#    listing.append(('plugin://plugin.video.youtube/channel/UCNNH5GlnJvmNSUS53qNa8jg/', list_item, True))
 
     xbmcplugin.addDirectoryItems(_handle, listing, len(listing))
     xbmcplugin.addSortMethod(_handle, xbmcplugin.SORT_METHOD_LABEL_IGNORE_THE)
