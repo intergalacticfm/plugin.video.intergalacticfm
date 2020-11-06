@@ -25,7 +25,14 @@
         "url": "show/mw/",
         "tagline": "Do you believe in Magic?",
         "plot": "Hailing from the UK, Magic Waves has been broadcasting since 2006. Known for underground music in their legendary regular Sunday night broadcasts, our team brings you music and culture from the future and past with the highest passion.",
-        "genre": "Future Past"
+        "genre": "future past"
+    },
+    "laniakea": {
+        "label": "Laniakea",
+        "url": "show/laniakea/",
+        "tagline": "In the sunken city of R'lyeh, something is stirring",
+        "plot": "Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.",
+        "genre": "electronic, italo, disco, house, electro, techno, EBM, wave, metal"
     },
     "neon": {
         "label": "Neon",
