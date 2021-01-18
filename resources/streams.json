@@ -32,7 +32,7 @@
         "url": "show/laniakea/",
         "tagline": "In the sunken city of R'lyeh, something is stirring",
         "plot": "Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.",
-        "genre": "disco, house, electro, techno"
+        "genre": "electronic, techno, disco, house"
     },
     "neon": {
         "label": "Neon",
@@ -89,6 +89,13 @@
         "tagline": "Straight from the bin",
         "plot": "Taking from all corners of the underground, Leftover Radio brings weekly broadcasts from DIY communities and free spaces. Personal selections and experimental live-sets are transmitted over makeshift connections to a global audience.",
         "genre": "electro, acid, tekno"
+    },
+    "reveal": {
+        "label": "REVEAL",
+        "url": "show/reveal/",
+        "tagline": "Divulge in a mystical experience",
+        "plot": "Sometimes you want to go where everybody knows your name and they're always glad you came. You want to be where you can see our troubles are all the same. You want to be where everybody knows your name.",
+        "genre": "electronic music"
     },
     "vunk": {
         "label": "Vunk",
