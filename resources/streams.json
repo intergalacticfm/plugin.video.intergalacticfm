@@ -41,13 +41,6 @@
         "plot": "Dreams of Neon transmits from Berlin offering streams from Neon studios and club nights by Lazercat, Naks and the Dreams of Neon residents.",
         "genre": "electro, acid, italo"
     },
-    "submit": {
-        "label": "Submit",
-        "url": "show/submit/",
-        "tagline": "Gesloten Cirkel's stream",
-        "plot": "Stream from the producer named Gesloten Cirkel. Submit to his stream with his music and visuals.",
-        "genre": "electro, acid, techno"
-    },
     "discotto": {
         "label": "Discotto",
         "url": "show/discotto/",
