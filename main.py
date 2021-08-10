@@ -6,9 +6,9 @@ __copyright__ = 'GPL v.3 https://www.gnu.org/copyleft/gpl.html'
 from json import load
 from sys import argv
 from os.path import isfile
+import sys
 import requests
 from urlparse import parse_qsl
-import sys
 
 import xbmcgui
 import xbmcplugin
@@ -33,7 +33,7 @@ pl = 'playlist.m3u8'
 
 
 #TODO If JSON on ifm-site is younger, load that file. Otherwise, load local file.
-streams = load(open(f'{base}streams.json'))
+streams = load(open(f'{base}streams.json'))  # pylint:disable=consider-using-with
 
 def now_videos(streams):
     '''
