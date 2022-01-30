@@ -26,30 +26,30 @@ _handle = int(argv[1])
 _addon = xbmcaddon.Addon()
 
 
-fm = 'https://www.intergalactic.fm/'
-tv = 'https://www.intergalactic.tv/'
-pn = 'ifm-system/playingnow.json'
-pl = 'playlist.m3u8'
+FM = 'https://www.intergalactic.fm/'
+TV = 'https://www.intergalactic.tv/'
+PN = 'ifm-system/playingnow.json'
+PL = 'playlist.m3u8'
 
 
 #TODO If JSON on ifm-site is younger, load that file. Otherwise, load local file.
-streams = load(open(f'{base}streams.json'))  # pylint:disable=consider-using-with
+streams = load(open(f'{base}streams.json'))  # pylint:disable=consider-using-with,unspecified-encoding
 
 def now_videos(streams):
     '''
     Create list of available streams
     '''
 
-    r = requests.get(f'{fm}{pn}')
-    # log(f'{__addonid__} JSON: {r.json()}', LOGDEBUG)
+    req = requests.get(f'{FM}{PN}')
+    # log(f'{__addonid__} JSON: {req.json()}', LOGDEBUG)
 
     try:
-        nowplay = r.json()
+        nowplay = req.json()
         npvids = nowplay['11']
         log(f'{__addonid__} npvids: {npvids}', LOGDEBUG)
-    except Exception as e:
+    except Exception as exc:
         npvids = []
-        log(f'{__addonid__} Error with nowplay[\'11\'] {e}', LOGERROR)
+        log(f'{__addonid__} Error with nowplay[\'11\'] {exc}', LOGERROR)
 
     listvids = []
 
@@ -78,7 +78,9 @@ def list_videos():
     for video in videos:
         label = f"Live - {video['label']}"
         list_item = xbmcgui.ListItem(label=label)
-        list_item.setInfo(type='video', infoLabels={'genre': video['genre'], 'plot': video['plot'], 'tagline': video['tagline']})
+        list_item.setInfo(type='video', infoLabels={'genre': video['genre'],
+                                                    'plot': video['plot'],
+                                                    'tagline': video['tagline']})
 
         # see https://kodi.wiki/view/Movie_artwork
         # only poster, fanart and clearlogo is supported/needed
@@ -112,32 +114,12 @@ def list_videos():
         list_item.setArt(art)
         list_item.setProperty('IsPlayable', 'true')
 
-        url = f"{tv}{video['url']}{pl}"
+        url = f"{TV}{video['url']}{PL}"
         #log(f'{__addonid__} url: {url}', LOGDEBUG)
         url = f'{_url}?action=play&video={url}'
         is_folder = False
 
         listing.append((url, list_item, is_folder))
-
-#    list_item = xbmcgui.ListItem('YouTube IFM')
-#    list_item.setProperty('IsPlayable', 'false')
-#    list_item.setInfo(type='video', infoLabels={'genre': 'electro, acid, italo, disco', 'plot': 'The official YouTube channel of Intergalactic FM. Offers hundreds of videos, most are live sets recorded at the Panama Racing Club and IFM Fest in The Hague.', 'tagline': 'You Are Not Alone'})
-#    art = {}
-#    art['poster'] = f'{base}intergalactic_youtube-poster.png'
-#    art['fanart'] = f'{base}cbs_tv-fanart.jpg'
-#    art['clearlogo'] = f'{base}intergalactic_tv-clearlogo.png'
-#    list_item.setArt(art)
-#    listing.append(('plugin://plugin.video.youtube/channel/UCyiBzmL0FAJlupsJJg5BNzQ/', list_item, True))
-#
-#    list_item = xbmcgui.ListItem('YouTube Viewlexx')
-#    list_item.setProperty('IsPlayable', 'false')
-#    list_item.setInfo(type='video', infoLabels={'genre': 'electro, acid', 'plot': 'The official YouTube channel of the record label Viewlexx, est. 1995. Also home to the sublabel Murder Capital and I-F\'s playlist The Daily Struggle.', 'tagline': 'V = for Viewlexx!'})
-#    art = {}
-#    art['poster'] = f'{base}viewlexx_youtube-poster.png'
-#    art['fanart'] = f'{base}cbs_tv-fanart.jpg'
-#    art['clearlogo'] = f'{base}intergalactic_tv-clearlogo.png'
-#    list_item.setArt(art)
-#    listing.append(('plugin://plugin.video.youtube/channel/UCNNH5GlnJvmNSUS53qNa8jg/', list_item, True))
 
     xbmcplugin.addDirectoryItems(_handle, listing, len(listing))
     xbmcplugin.addSortMethod(_handle, xbmcplugin.SORT_METHOD_LABEL_IGNORE_THE)
