@@ -2,7 +2,6 @@
 
 ![Intergalactic FM TV icon](resources/icon.png?raw=true)
 
-
 ## Installation
 
 This add-on can be installed directly from Kodi's main repository and it will
@@ -17,11 +16,9 @@ Stepts to take to install from the Kodi main repository are:
 5. Navigate to **Intergalactic FM TV** and select it
 6. Choose **Install**
 
-
 ### Installing Kodi
 
 Instructions for installing Kodi can be found here: https://kodi.tv/download
-
 
 ## Screenshots
 
@@ -30,7 +27,6 @@ Instructions for installing Kodi can be found here: https://kodi.tv/download
 ![Screenshot 2](screenshots/s2.png?raw=true)
 
 ![Screenshot 3](screenshots/s3.png?raw=true)
-
 
 ## Development
 
@@ -47,35 +43,31 @@ https://github.com/intergalacticfm/plugin.video.intergalacticfm/archive/master.z
 8. Navigate to the directory where the zip file has been downloaded
 9. Install the file **master.zip**
 
-
 ## Testing
 
-This version has been tested on the following configurations.
+This version has been tested on the following configurations for Kodi.
 
-|           | Kodi Krypton 17 | Kodi Leia 18 |
-|-----------|----------------:|-------------:|
-| Ubuntu    |     Disco 19.04 |  Disco 19.04 |
-| Debian    |       Stretch 9 |    Buster 10 |
-| Raspbian  |       Stretch 9 |    Buster 10 |
-| LibreELEC |               8 |            9 |
-| Android   |           Pie 9 |        Pie 9 |
+|           |  Krypton 17 |     Leia 18 | Matrix 19 |
+|-----------|------------:|------------:|----------:|
+| Ubuntu    | Disco 19.04 | Disco 19.04 |      TODO |
+| Debian    |   Stretch 9 |   Buster 10 |      TODO |
+| Raspbian  |   Stretch 9 |   Buster 10 |      TODO |
+| LibreELEC |           8 |           9 |      TODO |
+| Android   |       Pie 9 |       Pie 9 |      TODO |
 
 In general, the combination of latest stable version are supported. Most likely
 also all combinations with the one-but-latest versions of Kodi and an operating
 system are supported.
 
-
 ## Maintenance
 
 See `resources/disabled` for (temporarily) disabled streams.
-
 
 ## See also
 
 See also the audio plugin called Intergalactic FM at
 http://kodi.wiki/view/Add-on:Intergalactic_FM and
 https://github.com/intergalacticfm/plugin.audio.intergalacticfm
-
 
 ## Thanks
 
