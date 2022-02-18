@@ -1,5 +1,6 @@
-Version 2.4.0
+Version 3.0.0
 Kodi Matrix with Python 3
+Added Laniakea, Cobra FM and REVEAL
 
 Version 2.3.0
 Added Austin Cassel and The Dream Machine

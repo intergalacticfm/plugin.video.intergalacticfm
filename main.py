@@ -7,16 +7,17 @@ from json import load
 from sys import argv
 from os.path import isfile
 import sys
+from urllib.parse import parse_qsl
 import requests
-from urlparse import parse_qsl
 
 import xbmcgui
 import xbmcplugin
 import xbmcaddon
 from xbmc import log, LOGDEBUG, LOGERROR
+from xbmcvfs import translatePath
 
 __addonid__ = "plugin.video.intergalacticfm"
-base = xbmc.translatePath(f'special://home/addons/{__addonid__}/resources/')
+base = translatePath(f'special://home/addons/{__addonid__}/resources/')
 
 # Get the plugin url in plugin:// notation.
 _url = argv[0]

@@ -37,7 +37,7 @@ version of this add-on can be installed by the following steps:
 3. Long-press the add-on and choose **Information**
 4. Choose **Uninstall**
 5. Download in a web browser
-https://github.com/intergalacticfm/plugin.video.intergalacticfm/archive/master.zip
+https://github.com/intergalacticfm/plugin.video.intergalacticfm/archive/refs/heads/develop.zip
 6. Navigate up and go to the **Add-on browser**
 7. Choose **Install from zip file**
 8. Navigate to the directory where the zip file has been downloaded
@@ -47,13 +47,13 @@ https://github.com/intergalacticfm/plugin.video.intergalacticfm/archive/master.z
 
 This version has been tested on the following configurations for Kodi.
 
-|           |  Krypton 17 |     Leia 18 | Matrix 19 |
-|-----------|------------:|------------:|----------:|
-| Ubuntu    | Disco 19.04 | Disco 19.04 |      TODO |
-| Debian    |   Stretch 9 |   Buster 10 |      TODO |
-| Raspbian  |   Stretch 9 |   Buster 10 |      TODO |
-| LibreELEC |           8 |           9 |      TODO |
-| Android   |       Pie 9 |       Pie 9 |      TODO |
+|           |  Krypton 17 |     Leia 18 |    Matrix 19 |
+|-----------|------------:|------------:|-------------:|
+| Ubuntu    | Disco 19.04 | Disco 19.04 | Impish 21.10 |
+| Debian    |   Stretch 9 |   Buster 10 |         TODO |
+| Raspbian  |   Stretch 9 |   Buster 10 |         TODO |
+| LibreELEC |           8 |           9 |         TODO |
+| Android   |       Pie 9 |       Pie 9 |         TODO |
 
 In general, the combination of latest stable version are supported. Most likely
 also all combinations with the one-but-latest versions of Kodi and an operating
