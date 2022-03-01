@@ -52,7 +52,7 @@
         "label": "El Camino",
         "url": "show/elcamino/",
         "tagline": "Es el Camino",
-        "plot": "Miqkael has been a dj since 1997 and lived in Barcelona from 2000 until 2011, playing at Moog and other clubs. Since that time he has been also performing around Europe. Streaming from his Basque homeland, he shows you the way by mixing love and anger.",
+        "plot": "Miqkael has been a DJ since 1997 and lived in Barcelona from 2000 until 2011, playing at Moog and other clubs. Since that time he has been also performing around Europe. Streaming from his Basque homeland, he shows you the way by mixing love and anger.",
         "genre": "techno, disco, chicago, electro"
     },
     "shipwrec": {
@@ -94,28 +94,28 @@
         "label": "Vunk",
         "url": "live/vunk/",
         "tagline": "Music from the Heart",
-        "plot": "Music straight from the heart is what David Vunk is all about. Known for his label Moustace Records and his envigorating dj sets and productions, watch his weekly stream on Wednesday evening from West Coast's Rotterdam.",
+        "plot": "Music straight from the heart is what David Vunk is all about. Known for his label Moustace Records and his envigorating DJ sets and productions, watch his weekly stream on Wednesday evening from West Coast's Rotterdam.",
         "genre": "techno, acid, italo, disco"
     },
     "clone": {
         "label": "Clone",
         "url": "show/clone/",
         "tagline": "Serge Clone's stream",
-        "plot": "Serge Clone has a record shop located in Rotterdam, the Netherlands. Next to having a label and begin a distributor focused on electro, techno, house, soundtracks, (italo) disco and much more, he is also an active dj and producer himself.",
+        "plot": "Serge Clone has a record shop located in Rotterdam, the Netherlands. Next to having a label and begin a distributor focused on electro, techno, house, soundtracks, (italo) disco and much more, he is also an active DJ and producer himself.",
         "genre": "electronic music"
     },
     "zahara": {
         "label": "Zahara",
         "url": "show/zahara/",
         "tagline": "Cocktailbar Scheveningen",
-        "plot": "Live stream from Zahara cocktail bar which is located directly at the beach in Scheveningen, the Netherlands. A frequent location for Intergalactic FM djs and has hosted for many of the IFM's infamous top 100. The most West you can go on Holland's Coast.",
+        "plot": "Live stream from Zahara cocktail bar which is located directly at the beach in Scheveningen, the Netherlands. A frequent location for Intergalactic FM DJs and has hosted for many of the IFM's infamous top 100. The most West you can go on Holland's Coast.",
         "genre": "electronic music"
     },
     "djaustincassell": {
         "label": "Austin Cassell",
         "url": "show/djaustincassell/",
         "tagline": "Austin Cassell's stream",
-        "plot": "UK radio host and dj specialising in braindance, experimental, old school techno and multigenre dj sets. He has been part of the IFM krew since 2012 curating the very best of new music, classic tracks and exclusive guest sets. Previous guests include Wisp, Global Goon, NEZ, VLR and Impakt",
+        "plot": "UK radio host and DJ specialising in braindance, experimental, old school techno and multigenre DJ sets. He has been part of the IFM krew since 2012 curating the very best of new music, classic tracks and exclusive guest sets. Previous guests include Wisp, Global Goon, NEZ, VLR and Impakt",
         "genre": "braindance, experimental, old school techno"
     },
     "cobrafm": {
@@ -129,7 +129,7 @@
         "label": "508",
         "url": "show/508/",
         "tagline": "Welcome 2da Club",
-        "plot": "Stream of Club 508. Mix of recordings and live streams of dj sets and live performances.",
+        "plot": "Stream of Club 508. Mix of recordings and live streams of DJ sets and live performances.",
         "genre": "disco, house, techno, italo, electro, experimental electronics"
     }
 }
