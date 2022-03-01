@@ -124,5 +124,12 @@
         "tagline": "Live From The Snakepit",
         "plot": "Brought to you by the Creme Organization, live from the Snakepit Studios in Zagreb, it is Cobra FM.",
         "genre": "electromic music"
+    },
+    "508": {
+        "label": "508",
+        "url": "show/508/",
+        "tagline": "Welcome 2da Club",
+        "plot": "Stream of Club 508. Mix of recordings and live streams of dj sets and live performances.",
+        "genre": "disco, house, techno, italo, electro, experimental electronics"
     }
 }
