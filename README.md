@@ -43,6 +43,8 @@ https://github.com/intergalacticfm/plugin.video.intergalacticfm/archive/refs/hea
 8. Navigate to the directory where the zip file has been downloaded
 9. Install the file **master.zip**
 
+See https://www.intergalactic.fm/js/playing-now_415.js for stream details.
+
 ## Testing
 
 This version has been tested on the following configurations for Kodi.
@@ -50,18 +52,14 @@ This version has been tested on the following configurations for Kodi.
 |           |  Krypton 17 |     Leia 18 |    Matrix 19 |
 |-----------|------------:|------------:|-------------:|
 | Ubuntu    | Disco 19.04 | Disco 19.04 | Impish 21.10 |
-| Debian    |   Stretch 9 |   Buster 10 |         TODO |
-| Raspbian  |   Stretch 9 |   Buster 10 |         TODO |
+| Debian    |   Stretch 9 |   Buster 10 |  Bullseye 11 |
+| Raspbian  |   Stretch 9 |   Buster 10 |  Bullseye 11 |
 | LibreELEC |           8 |           9 |         TODO |
 | Android   |       Pie 9 |       Pie 9 |         TODO |
 
 In general, the combination of latest stable version are supported. Most likely
 also all combinations with the one-but-latest versions of Kodi and an operating
 system are supported.
-
-## Maintenance
-
-See `resources/disabled` for (temporarily) disabled streams.
 
 ## See also
 
