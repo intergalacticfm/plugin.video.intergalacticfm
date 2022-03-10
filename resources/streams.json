@@ -25,7 +25,14 @@
         "url": "show/mw/",
         "tagline": "Do you believe in Magic?",
         "plot": "Hailing from the UK, Magic Waves has been broadcasting since 2006. Known for underground music in their legendary regular Sunday night broadcasts, our team brings you music and culture from the future and past with the highest passion.",
-        "genre": "Future Past"
+        "genre": "future past"
+    },
+    "laniakea": {
+        "label": "Laniakea",
+        "url": "show/laniakea/",
+        "tagline": "In the sunken city of R'lyeh, something is stirring",
+        "plot": "Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.",
+        "genre": "electronic, techno, disco, house"
     },
     "neon": {
         "label": "Neon",
@@ -33,13 +40,6 @@
         "tagline": "Dreams of Neon, Berlin",
         "plot": "Dreams of Neon transmits from Berlin offering streams from Neon studios and club nights by Lazercat, Naks and the Dreams of Neon residents.",
         "genre": "electro, acid, italo"
-    },
-    "submit": {
-        "label": "Submit",
-        "url": "show/submit/",
-        "tagline": "Gesloten Cirkel's stream",
-        "plot": "Stream from the producer named Gesloten Cirkel. Submit to his stream with his music and visuals.",
-        "genre": "electro, acid, techno"
     },
     "discotto": {
         "label": "Discotto",
@@ -52,7 +52,7 @@
         "label": "El Camino",
         "url": "show/elcamino/",
         "tagline": "Es el Camino",
-        "plot": "Miqkael has been a dj since 1997 and lived in Barcelona from 2000 until 2011, playing at Moog and other clubs. Since that time he has been also performing around Europe. Streaming from his Basque homeland, he shows you the way by mixing love and anger.",
+        "plot": "Miqkael has been a DJ since 1997 and lived in Barcelona from 2000 until 2011, playing at Moog and other clubs. Since that time he has been also performing around Europe. Streaming from his Basque homeland, he shows you the way by mixing love and anger.",
         "genre": "techno, disco, chicago, electro"
     },
     "shipwrec": {
@@ -83,32 +83,53 @@
         "plot": "Taking from all corners of the underground, Leftover Radio brings weekly broadcasts from DIY communities and free spaces. Personal selections and experimental live-sets are transmitted over makeshift connections to a global audience.",
         "genre": "electro, acid, tekno"
     },
+    "reveal": {
+        "label": "REVEAL",
+        "url": "show/reveal/",
+        "tagline": "Lifting the veil",
+        "plot": "Sometimes you want to go where everybody knows your name and they're always glad you came. You want to be where you can see our troubles are all the same. You want to be where everybody knows your name.",
+        "genre": "electronic music"
+    },
     "vunk": {
         "label": "Vunk",
         "url": "live/vunk/",
         "tagline": "Music from the Heart",
-        "plot": "Music straight from the heart is what David Vunk is all about. Known for his label Moustace Records and his envigorating dj sets and productions, watch his weekly stream on Wednesday evening from West Coast's Rotterdam.",
+        "plot": "Music straight from the heart is what David Vunk is all about. Known for his label Moustace Records and his envigorating DJ sets and productions, watch his weekly stream on Wednesday evening from West Coast's Rotterdam.",
         "genre": "techno, acid, italo, disco"
     },
     "clone": {
         "label": "Clone",
         "url": "show/clone/",
         "tagline": "Serge Clone's stream",
-        "plot": "Serge Clone has a record shop located in Rotterdam, the Netherlands. Next to having a label and begin a distributor focused on electro, techno, house, soundtracks, (italo) disco and much more, he is also an active dj and producer himself.",
+        "plot": "Serge Clone has a record shop located in Rotterdam, the Netherlands. Next to having a label and begin a distributor focused on electro, techno, house, soundtracks, (italo) disco and much more, he is also an active DJ and producer himself.",
         "genre": "electronic music"
     },
     "zahara": {
         "label": "Zahara",
         "url": "show/zahara/",
         "tagline": "Cocktailbar Scheveningen",
-        "plot": "Live stream from Zahara cocktail bar which is located directly at the beach in Scheveningen, the Netherlands. A frequent location for Intergalactic FM djs and has hosted for many of the IFM's infamous top 100. The most West you can go on Holland's Coast.",
+        "plot": "Live stream from Zahara cocktail bar which is located directly at the beach in Scheveningen, the Netherlands. A frequent location for Intergalactic FM DJs and has hosted for many of the IFM's infamous top 100. The most West you can go on Holland's Coast.",
         "genre": "electronic music"
     },
     "djaustincassell": {
         "label": "Austin Cassell",
         "url": "show/djaustincassell/",
         "tagline": "Austin Cassell's stream",
-        "plot": "UK radio host and dj specialising in braindance, experimental, old school techno and multigenre dj sets. He has been part of the IFM krew since 2012 curating the very best of new music, classic tracks and exclusive guest sets. Previous guests include Wisp, Global Goon, NEZ, VLR and Impakt",
+        "plot": "UK radio host and DJ specialising in braindance, experimental, old school techno and multigenre DJ sets. He has been part of the IFM krew since 2012 curating the very best of new music, classic tracks and exclusive guest sets. Previous guests include Wisp, Global Goon, NEZ, VLR and Impakt",
         "genre": "braindance, experimental, old school techno"
+    },
+    "cobrafm": {
+        "label": "Cobra FM",
+        "url": "show/cobrafm/",
+        "tagline": "Live From The Snakepit",
+        "plot": "Brought to you by the Creme Organization, live from the Snakepit Studios in Zagreb, it is Cobra FM.",
+        "genre": "electromic music"
+    },
+    "508": {
+        "label": "508",
+        "url": "show/508/",
+        "tagline": "Welcome 2da Club",
+        "plot": "Stream of Club 508. Mix of recordings and live streams of DJ sets and live performances.",
+        "genre": "disco, house, techno, italo, electro, experimental electronics"
     }
 }

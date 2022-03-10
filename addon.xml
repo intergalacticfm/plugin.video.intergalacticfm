@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.intergalacticfm" name="Intergalactic FM TV" version="2.3.0" provider-name="Dreamer, Pander">
+<addon id="plugin.video.intergalacticfm" name="Intergalactic FM TV" version="3.0.0" provider-name="Dreamer, Pander">
 <requires>
-    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests" version="2.19.1"/>
-    <import addon="plugin.video.youtube" version="5.3.10"/>
 </requires>
 <extension point="xbmc.python.pluginsource" library="main.py">
     <provides>video</provides>
@@ -12,7 +11,7 @@
     <platform>all</platform>
     <summary lang="en">No Station Such Dedication</summary>
     <description lang="en"><![CDATA[
-Video add-on with live video streams from Intergalacic FM and hundreds of recorded live sets via its YouTube channel.
+Video add-on with live video streams from Intergalacic FM.
 
 See also the audio plugin. Please consider donating at https://intergalactic.fm to keep Intergalactic FM in orbit.
     ]]></description>
@@ -26,7 +25,7 @@ See also the audio plugin. Please consider donating at https://intergalactic.fm 
     <news>Updated with latest artwork metadata</news>
     <license>The GNU General Public License (GPL)</license>
     <source>https://github.com/intergalacticfm/plugin.video.intergalacticfm</source>
-    <website>http://intergalactic.fm</website>
+    <website>https://www.intergalactic.fm</website>
     <forum>https://forum.kodi.tv/showthread.php?tid=257201</forum>
 </extension>
 </addon>
