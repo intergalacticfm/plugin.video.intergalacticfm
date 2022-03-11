@@ -28,7 +28,7 @@ _addon = xbmcaddon.Addon()
 
 
 FM = 'https://www.intergalactic.fm/'
-TV = 'https://www.intergalactic.tv/'
+TV = 'https://intergalactic.tv/'
 PN = 'ifm-system/playingnow.json'
 PL = 'playlist.m3u8'
 
