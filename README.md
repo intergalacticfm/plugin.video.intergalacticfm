@@ -45,6 +45,14 @@ https://github.com/intergalacticfm/plugin.video.intergalacticfm/archive/refs/hea
 
 See https://www.intergalactic.fm/js/playing-now_415.js for stream details.
 
+Install
+
+    pip install kodi-addon-checker
+
+and run
+
+    kodi-addon-checker --branch matrix ../plugin.video.intergalacticfm
+
 ## Testing
 
 This version has been tested on the following configurations for Kodi.

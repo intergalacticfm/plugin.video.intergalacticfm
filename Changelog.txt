@@ -1,3 +1,6 @@
+Version 3.0.1
+Improved metadata and removed defunct channels
+
 Version 3.0.0
 Kodi Matrix with Python 3
 Added Laniakea, Cobra FM and REVEAL
