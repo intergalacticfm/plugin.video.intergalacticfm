@@ -55,15 +55,15 @@ and run
 
 ## Testing
 
-This version has been tested on the following configurations for Kodi.
+The latest version of this plugin at the time of testing has been tested on the
+following configurations for Kodi.
 
-|           |  Krypton 17 |     Leia 18 |    Matrix 19 |
-|-----------|------------:|------------:|-------------:|
-| Ubuntu    | Disco 19.04 | Disco 19.04 | Impish 21.10 |
-| Debian    |   Stretch 9 |   Buster 10 |  Bullseye 11 |
-| Raspbian  |   Stretch 9 |   Buster 10 |  Bullseye 11 |
-| LibreELEC |           8 |           9 |         TODO |
-| Android   |       Pie 9 |       Pie 9 |         TODO |
+|            | Ubuntu       | Debian / Raspberry Pi OS | Android | LibreELEC |
+|------------|--------------|--------------------------|---------|-----------|
+| 21 Omega   | 22.04 Jammy  | 12 Bookworm              | 11      | no test   |
+| 19 Matrix  | 21.10 Impish | 11 Bullseye              | no test | no test   |
+| 18 Leia    | 19.04 Disco  | 10 Buster                | 09 Pie  | 09        |
+| 17 Krypton | 19.04 Disco  | 09 Stretch               | 09 Pie  | 08        |
 
 In general, the combination of latest stable version are supported. Most likely
 also all combinations with the one-but-latest versions of Kodi and an operating
