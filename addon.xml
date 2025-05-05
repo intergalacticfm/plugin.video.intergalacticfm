@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.intergalacticfm" name="Intergalactic FM TV" version="3.0.3" provider-name="Dreamer, Pander">
+<addon id="plugin.video.intergalacticfm" name="Intergalactic FM TV" version="3.0.3" provider-name="Shogutora, Pander, Dreamer">
 <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.urllib3" version="2.2.3"/>

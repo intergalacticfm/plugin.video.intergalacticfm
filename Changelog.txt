@@ -1,3 +1,7 @@
+Version 3.0.? - 2025-0?-??
+
+- Improved documentation and streams
+
 Version 3.0.3 - 2025-03-08
 
 - Improved dependencies, metadata and documentation
