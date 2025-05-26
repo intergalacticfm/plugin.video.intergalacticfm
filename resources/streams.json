@@ -27,13 +27,6 @@
         "plot": "Dreams of Neon transmits from Berlin offering streams from Neon studios and club nights by Lazercat, Naks and the Dreams of Neon residents.",
         "genre": "electro, acid, italo"
     },
-    "audiodrome": {
-        "label": "Audiodrome",
-        "url": "show/audiodrome/",
-        "tagline": "TODO",
-        "plot": "Seattle's Sonic Playground Awaits: Tune in to Audiodrome at the Pony Club!",
-        "genre": "TODO"
-    },
     "austincassell": {
         "label": "Austin Cassell",
         "url": "show/austincassell/",
@@ -47,13 +40,6 @@
         "tagline": "Es el Camino",
         "plot": "Miqkael has been a DJ since 1997 and lived in Barcelona from 2000 until 2011, playing at Moog and other clubs. Since that time he has been also performing around Europe. Streaming from his Basque homeland, he shows you the way by mixing love and anger.",
         "genre": "techno, disco, chicago, electro"
-    },
-    "hintergarten": {
-        "label": "Hintergarten",
-        "url": "show/hintergarten/",
-        "tagline": "TODO",
-        "plot": "TODO.",
-        "genre": "TODO"
     },
     "laniakea": {
         "label": "Laniakea",
@@ -76,39 +62,11 @@
         "plot": "This stream is Murder Capital's TV second channel. Delivering a mix of smut and exploitation B movies.",
         "genre": "B movies, smut, exploitation"
     },
-    "pinkman": {
-        "label": "Pinkman",
-        "url": "show/pinkman/",
-        "tagline": "TODO",
-        "plot": "TODO.",
-        "genre": "TODO"
-    },
     "reveal": {
         "label": "REVEAL",
         "url": "show/reveal/",
         "tagline": "Lifting the veil",
         "plot": "Official Intergalactic FM chapter in Utrecht. REVEAL is a streaming club for DJ sets, live performances and artists in residence.",
-        "genre": "electronic music"
-    },
-    "the-low-end": {
-        "label": "THE LOW END",
-        "url": "show/the-low-end/",
-        "tagline": "TODO",
-        "plot": "TODO.",
-        "genre": "TODO"
-    },
-    "tunnelradio": {
-        "label": "Tunnelradio",
-        "url": "show/tunnelradio/",
-        "tagline": "TODO",
-        "plot": "TODO.",
-        "genre": "TODO"
-    },
-    "vinyard": {
-        "label": "Vinyard",
-        "url": "show/vinyard/",
-        "tagline": "Music from the yard",
-        "plot": "The pitch black back yard studio somewhere in the northern part of Rotterdam.",
         "genre": "electronic music"
     },
     "radionul": {
