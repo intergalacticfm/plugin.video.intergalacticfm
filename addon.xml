@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.intergalacticfm" name="Intergalactic FM TV" version="3.0.0" provider-name="Dreamer, Pander">
+<addon id="plugin.video.intergalacticfm" name="Intergalactic FM TV" version="3.0.3" provider-name="Shogutora, Pander, Dreamer">
 <requires>
     <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.requests" version="2.19.1"/>
+    <import addon="script.module.urllib3" version="2.2.3"/>
+    <import addon="script.module.requests" version="2.31.0"/>
 </requires>
 <extension point="xbmc.python.pluginsource" library="main.py">
     <provides>video</provides>
 </extension>
 <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary lang="en">No Station Such Dedication</summary>
-    <description lang="en"><![CDATA[
-Video add-on with live video streams from Intergalacic FM.
+    <summary lang="en_GB">No Station Such Dedication</summary>
+    <description lang="en_GB">Add-on for the video streams of the online radio station Intergalacic FM.
 
-See also the audio plugin. Please consider donating at https://intergalactic.fm to keep Intergalactic FM in orbit.
-    ]]></description>
+See also the audio plugin. Please consider donating at https://intergalactic.fm to keep us in orbit.</description>
     <assets>
         <icon>resources/icon.png</icon>
         <fanart>resources/fanart.jpg</fanart>
@@ -26,6 +25,5 @@ See also the audio plugin. Please consider donating at https://intergalactic.fm 
     <license>GPL-3.0-or-later</license>
     <source>https://github.com/intergalacticfm/plugin.video.intergalacticfm</source>
     <website>https://www.intergalactic.fm</website>
-    <forum>https://forum.kodi.tv/showthread.php?tid=257201</forum>
 </extension>
 </addon>

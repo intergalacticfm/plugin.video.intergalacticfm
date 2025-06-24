@@ -1,6 +1,6 @@
 '''Kodi video plugin for Intergalactic FM'''
 
-__author__ = 'Dreamer, Pander'
+__author__ = 'Shogutora, Pander, Dreamer'
 __copyright__ = 'GPL v.3 https://www.gnu.org/copyleft/gpl.html'
 
 from json import load
