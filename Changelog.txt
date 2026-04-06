@@ -1,6 +1,7 @@
-Version 3.0.? - 2025-0?-??
+Version 3.0.4 - 2026-04-??
 
 - Improved documentation and streams
+- Added artwork Tunnelradio
 
 Version 3.0.3 - 2025-03-08
 
